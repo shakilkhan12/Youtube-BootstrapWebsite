@@ -1,0 +1,210 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #FAFAFA;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/bg2.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#header::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(to right, rgb(255,255,255) 70%, rgba(0, 208, 110, .5) 30%);
+}
+
+.header-container {
+     display: flex;
+     height: 100vh;
+     width: 500px;
+     align-items: center;
+}
+
+.header-text {
+    z-index: 1;
+}
+
+.header-text h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #222;
+}
+
+.btn-custom {
+    border: none;
+    background: linear-gradient(to right, #2ae6b5, #72e574);
+    border-radius: 30px;
+    font-size: 14px;
+    padding: 7px 20px;
+    box-shadow: 10px 10px 10px -10px rgba(0,0,0,.1);
+}
+
+#logo {
+    position: absolute;
+    top: 30px;
+    left: 90px;
+    z-index: 1;
+    font-size: 25px;
+    color: #2ae6b5;
+}
+
+#features {
+    padding: 70px 0;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.heading h2 {
+    font-size: 20px;
+    border-bottom: 1px solid #222;
+    color: #222;
+    display: inline-block;
+    padding-bottom: 10px;
+
+}
+
+.card {
+    border: none;
+    box-shadow: 10px 10px 10px -10px rgba(0,0,0,.1)!important;
+}
+
+.cardIcon span {
+    font-size:60px; 
+    color: #72e574;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.cardHeading h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.cardP {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#count {
+    background: linear-gradient(to right, #2ae6b5, #72e574);
+    padding: 70px 0;
+}
+
+.count {
+    color:#fff;
+}
+
+.count h3 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.count p {
+    margin-bottom: 14px;
+    font-weight: 300;
+}
+
+#prices {
+    padding: 70px 0;
+}
+
+.plan {
+    color: #999;
+}
+
+.price {
+    font-size: 40px;
+    font-weight: 700;
+    color: #0275D8;
+}
+
+.price span {
+    font-size: 16px;
+}
+
+.discount {
+    margin-bottom: 10px;
+}
+
+.pClass p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.pClass p:first-child {
+    color: #999;
+}
+
+.pClass p:last-child {
+    color: #999;
+}
+
+#customers {
+    padding: 70px 0;
+}
+
+.customerImg {
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+}
+
+.customerImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.customerName {
+    margin: 6px 0;
+
+}
+
+.review {
+    text-align: center;
+    font-size: 14px;
+}
+
+.review span {
+    display: inline-block;
+    font-size: 35px;
+}
+
+/* Media Query */
+@media (max-width: 600px){
+    .header-container {
+        width: 100%;
+    }
+
+    #header::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #ffff;
+     }
+
+     .header-text h1 {
+        font-size: 30px;
+        font-weight: 600;
+        color: #222;
+    }
+
+    #logo {
+        left: 30px;
+    }
+}
